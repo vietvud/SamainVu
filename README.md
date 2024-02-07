@@ -1,35 +1,9 @@
-# Scraper de Manga
+# SAE : Web Scraping
 
-Ce projet Java utilise la bibliothèque JSoup pour extraire des informations à partir de la page Web de SensCritique, qui répertorie les mangas les plus vendus au monde.
+## Analyse des Mangas les plus vendus
 
-## Prérequis
-- Java (version 8 ou supérieure)
-- Maven
+### Pour lancer l'application :
 
-## Configuration du projet
-1. Clonez le référentiel Git :
-   ```bash
-   git clone https://url-du-referentiel.git
-Accédez au répertoire du projet :
+Pour **lancer** l'application, il faut accéder au fichier **%demo\src\main\java\org\example\Main.java**. Ensuite, il suffit de lancer le *code Java* et un fichier **"output.csv"** devrait se créer dans vos dossiers. L'encodage a été définit afin de permettre la bonne utilisation du fichier CSV. Ce fichier CSV est directement connecté à un rapport **Power BI** intitulé *"Analyse Mangas.pbix"*. Ce rapport Power BI vous permettra de visionner les données, et de pouvoir les interpréter comme bon vous semble.
 
-bash
-Copy code
-cd nom-du-repertoire
-Exécutez le projet à l'aide de Maven :
-
-bash
-Copy code
-mvn clean install
-Exécution du scraper
-Exécutez la classe principale depuis la ligne de commande :
-
-bash
-Copy code
-java -cp target/nom-du-jar.jar org.example.Main
-Assurez-vous de remplacer nom-du-jar.jar par le nom réel du fichier JAR généré.
-
-Le scraper récupérera les informations depuis la page web et les affichera dans la console.
-
-Exportation vers un fichier CSV
-Le programme exportera les données dans un fichier CSV nommé output.csv dans le répertoire du projet.
-Note : Assurez-vous que les dépendances Maven sont correctement téléchargées et configurées avant d'exécuter le projet.
+Dans le rapport Power BI, sur la page "Home" il y a un bouton qui vous emmènera directement sur la page contenant l'analyse des données extraites grâce à notre code. Toute la partie **ETL** a été faite en **Power Query**, depuis Power BI. 
