@@ -10,6 +10,15 @@ Ce projet Java utilise la bibliothèque JSoup pour extraire des informations à 
 1. Clonez le référentiel Git :
    ```bash
    git clone https://url-du-referentiel.git
+Accédez au répertoire du projet :
+
+bash
+Copy code
+cd nom-du-repertoire
+Exécutez le projet à l'aide de Maven :
+
+bash
+Copy code
 mvn clean install
 Exécution du scraper
 Exécutez la classe principale depuis la ligne de commande :
@@ -23,5 +32,4 @@ Le scraper récupérera les informations depuis la page web et les affichera dan
 
 Exportation vers un fichier CSV
 Le programme exportera les données dans un fichier CSV nommé output.csv dans le répertoire du projet.
-
 Note : Assurez-vous que les dépendances Maven sont correctement téléchargées et configurées avant d'exécuter le projet.
